@@ -14,29 +14,38 @@ const quickSand = Quicksand({
 
 export default function Home() {
   const [background, setBackground] = useState("bg-kd-primary");
+  const [heroBlendMode, setHeroBlendMode] = useState("normal");
 
   function handleBgColorChange(bgColor: string) {
     setBackground(bgColor);
   }
 
+  function handleBlendModeChange(mode: string) {
+    setHeroBlendMode(mode);
+  }
+
   return (
     <main
-      className={`transition-colors ease-in-out delay-100 ${background} min-h-screen flex flex-col gap-y-10 md:gap-y-20 items-center pb-10 ${quickSand.className}`}
+      className={`transition-colors ease-in-out delay-300 ${background} min-h-screen flex flex-col gap-y-10 md:gap-y-20 items-center pb-10 ${quickSand.className}`}
     >
       {/* hero section */}
-      <Hero />
+      <Hero
+        updateParentBgColor={handleBgColorChange}
+        blendMode={heroBlendMode}
+        updateBlendMode={handleBlendModeChange}
+      />
 
       {/* projects */}
-      <Projects updateParentBgColor={handleBgColorChange} />
+      <Projects updateParentBgColor={handleBgColorChange} updateBlendMode={handleBlendModeChange} />
 
       {/* About */}
-      <About />
+      <About updateParentBgColor={handleBgColorChange} />
 
       {/* Experience */}
-      <Experience />
+      <Experience updateParentBgColor={handleBgColorChange} />
 
       {/* Contact */}
-      <Contact />
+      <Contact updateParentBgColor={handleBgColorChange} />
     </main>
   );
 }

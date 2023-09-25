@@ -20,6 +20,7 @@ const config: Config = {
         "kd-hard-pink": "#c7386d",
         "kd-primary": "#002350",
         "kd-white": "#ffffff",
+        "kd-blue": "#DFECF6",
       },
     },
   },
