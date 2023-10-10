@@ -11,6 +11,7 @@ interface Props {
 const Hero = ({ updateParentBgColor, blendMode, updateBlendMode }: Props) => {
   const [textColor, setTextColor] = useState("kd-lime");
   const [bgColor, setBgColor] = useState("kd-primary");
+  const [heroBlendMode, setHeroBlendMode] = useState(blendMode);
   const { ref, inView, entry } = useInView({
     threshold: 1,
   });
@@ -25,6 +26,10 @@ const Hero = ({ updateParentBgColor, blendMode, updateBlendMode }: Props) => {
     }
   }, [inView]);
 
+  useEffect(() => {
+    setHeroBlendMode(blendMode);
+  }, [blendMode]);
+
   return (
     <div
       className={`w-[80%] md:w-[45%] 2xl:w-[40%] pt-32 2xl:pt-40 flex flex-col gap-y-7 md:gap-y-10`}
@@ -36,19 +41,19 @@ const Hero = ({ updateParentBgColor, blendMode, updateBlendMode }: Props) => {
         Building user-centric digital experiences.
       </h1>
       <h2
-        className={`text-kd-lime mix-blend-${blendMode} leading-[1.7rem] lg:leading-[2rem] w-[90%] md:text-lg lg:text-xl md:w-[80%]`}
+        className={`text-kd-lime mix-blend-${heroBlendMode} leading-[1.7rem] lg:leading-[2rem] w-[90%] md:text-lg lg:text-xl md:w-[80%]`}
       >
         Hello, my name is David Kinuthia. Am a product & user-centric frontend
         engineer based out of Nairobi, Kenya.
       </h2>
       <div className="flex justify-between mt-5 md:w-[45%] 2xl:w-[40%]">
         <button
-          className={`bg-kd-lime text-kd-primary mix-blend-${blendMode} px-12 py-2 rounded-3xl`}
+          className={`bg-kd-lime text-kd-primary mix-blend-${heroBlendMode} px-12 py-2 rounded-3xl`}
         >
           Let's chat
         </button>
         <p
-          className={`text-kd-lime mix-blend-${blendMode} hidden lg:block text-lg capitalize underline underline-offset-8 cursor-pointer`}
+          className={`text-kd-lime mix-blend-${heroBlendMode} hidden lg:block text-lg capitalize underline underline-offset-8 cursor-pointer`}
         >
           learn more
         </p>
