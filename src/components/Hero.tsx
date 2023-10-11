@@ -49,12 +49,12 @@ const Hero = ({ updateHeroColors, parentTextColor, parentBgColor }: Props) => {
       </h2>
       <div className="flex gap-x-10 mt-5">
         <button
-          className={`bg-${textColor} text-${bgColor} px-12 py-2 rounded-3xl`}
+          className={`bg-${textColor} text-${bgColor} px-12 py-2 rounded-3xl hover:scale-95`}
         >
           Let's chat
         </button>
         <p
-          className={`text-${textColor} hidden lg:block text-lg capitalize underline underline-offset-8 cursor-pointer`}
+          className={`text-${textColor} hidden lg:block text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95`}
         >
           learn more
         </p>

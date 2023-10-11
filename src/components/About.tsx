@@ -38,7 +38,7 @@ const About = ({ updateParentBgColor }: Props) => {
           <div className={`bg-${bgColor} w-full h-[20rem] rounded-xl`}></div>
         </div>
       </div>
-      <p className="text-lg capitalize underline underline-offset-8 cursor-pointer">
+      <p className="text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95">
         learn all about me
       </p>
     </div>

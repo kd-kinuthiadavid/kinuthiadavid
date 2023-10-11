@@ -40,7 +40,7 @@ const Projects = ({ updateHeroColors }: ProjectsProps) => {
           <div className={`bg-${textColor} w-full h-[20rem] rounded-xl`}></div>
         </div>
       </div>
-      <p className="text-lg capitalize underline underline-offset-8 cursor-pointer">
+      <p className="text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95">
         see all projects
       </p>
     </div>
