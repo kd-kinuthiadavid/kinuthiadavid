@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { FaEnvelopeCircleCheck, FaMobile, FaLinkedinIn } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 interface Props {
   updateParentBgColor: (bgColor: string) => void;
@@ -23,7 +23,7 @@ const Contact = ({ updateParentBgColor }: Props) => {
   }, [inView, entry]);
   return (
     <div
-      className={`text-${textColor} w-[90%] md:w-[45%] 2xl:w-[40%] pt-32 2xl:pt-40 flex flex-col gap-y-7`}
+      className={`text-${textColor} w-[90%] md:w-[75%] xl:w-[50%] pt-32 2xl:pt-40 flex flex-col gap-y-7`}
     >
       <div className="flex justify-between items-center bg-kd-blue text-kd-primary p-16 rounded-xl">
         <h2
@@ -34,30 +34,76 @@ const Contact = ({ updateParentBgColor }: Props) => {
         </h2>
       </div>
       <div className="flex flex-col gap-y-3.5">
+        {/* say hello  */}
         <div
-          className={`bg-${bgColor} w-full h-[25rem] rounded-xl p-3 text-3xl flex flex-col justify-between`}
+          className={`bg-${bgColor} w-full min-h-[25rem] rounded-xl p-3 text-3xl flex flex-col justify-center items-center`}
         >
-          {/* <FaEnvelopeCircleCheck className="text-kd-primary place-self-start" />
-          <p className="underline underline-offset-8 font-light break-all cursor-pointer text-7xl">
-            kd.kinuthiadavid@gmail.com
-          </p> */}
+          <h1 className={`text-kd-blue font-bold text-5xl xl:text-9xl`}>
+            Say hello.
+          </h1>
         </div>
+
         <div className="flex flex-col md:flex-row gap-3.5 w-full">
+          {/* cold contacts */}
           <div
-            className={`bg-${bgColor} w-full h-[15rem] rounded-xl text-3xl p-3 flex flex-col justify-between`}
+            className={`bg-${bgColor} h-[15rem] w-full rounded-xl p-3 flex flex-col gap-y-2 justify-center items-center text-kd-blue`}
           >
-            {/* <FaMobile className="text-kd-primary place-self-start" />
-            <p className="underline underline-offset-8 font-light break-all cursor-pointer text-7xl">
-              +254726401183
-            </p> */}
+            <div className="flex flex-col gap-y-2">
+              <a
+                className="flex items-center gap-x-2 hover:underline hover:underline-offset-8 hover:scale-95"
+                href="mailto:kd.kinuthiadavid@gmail.com"
+                target="_blank"
+              >
+                <FaArrowRightLong />
+                <p className="text-md md:text-lg">kd.kinuthiadavid@gmail.com</p>
+              </a>
+              <a
+                className="flex items-center gap-x-2 hover:underline hover:underline-offset-8 hover:scale-95"
+                href="tel:+254726401183"
+              >
+                <FaArrowRightLong className="hover:scale-110" />
+                <p className="text-md md:text-lg">+254726401183</p>
+              </a>
+              <a
+                className="flex items-center gap-x-2 hover:underline hover:underline-offset-8 hover:scale-95"
+                href="https://www.youtube.com/watch?v=xzpJAECZkc4"
+                target="_blank"
+                about="Learn and discover Nairobi, the capital city of Kenya."
+              >
+                <FaArrowRightLong />
+                <p className="text-md md:text-lg">Nairobi. Kenya.</p>
+              </a>
+            </div>
           </div>
           <div
-            className={`bg-${bgColor} w-full h-[15rem] rounded-xl text-3xl p-3 flex flex-col justify-between`}
+            className={`bg-${bgColor} text-kd-blue w-full h-[15rem] rounded-xl p-3 flex flex-col justify-center items-center`}
           >
-            {/* <FaLinkedinIn className="text-kd-primary place-self-start" />
-            <p className="underline underline-offset-8 font-light break-all cursor-pointer text-7xl">
-              LinkedIn
-            </p> */}
+            <div className="flex flex-col gap-y-2">
+              <a
+                className="flex items-center gap-x-2 cursor-pointer hover:underline hover:underline-offset-8 hover:scale-95"
+                href="https://www.linkedin.com/in/david-kinuthia/"
+                target="_blank"
+              >
+                <FaArrowRightLong />
+                <p className="text-md md:text-lg">LinkedIn</p>
+              </a>
+              <a
+                className="flex items-center gap-x-2 cursor-pointer hover:underline hover:underline-offset-8 hover:scale-95"
+                href="https://github.com/kd-kinuthiadavid"
+                target="_blank"
+              >
+                <FaArrowRightLong />
+                <p className="text-md md:text-lg">GitHub</p>
+              </a>
+              <a
+                className="flex items-center gap-x-2 cursor-pointer hover:underline hover:underline-offset-8 hover:scale-95"
+                href="/"
+                target="_blank"
+              >
+                <FaArrowRightLong />
+                <p className="text-md md:text-lg">Blog</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>

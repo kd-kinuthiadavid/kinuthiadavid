@@ -32,7 +32,7 @@ const Hero = ({ updateParentBgColor, blendMode, updateBlendMode }: Props) => {
 
   return (
     <div
-      className={`w-[80%] md:w-[45%] 2xl:w-[40%] pt-32 2xl:pt-40 flex flex-col gap-y-7 md:gap-y-10`}
+      className={`w-[80%] md:w-[75%] xl:w-[50%] 2xl:w-[40%] pt-32 2xl:pt-40 flex flex-col gap-y-7 md:gap-y-10`}
     >
       <h1
         className={`font-bold text-5xl leading-[3.5rem] md:text-8xl md:leading-[6rem] text-kd-lime mix-blend-${blendMode}`}
@@ -46,7 +46,7 @@ const Hero = ({ updateParentBgColor, blendMode, updateBlendMode }: Props) => {
         Hello, my name is David Kinuthia. Am a product & user-centric frontend
         engineer based out of Nairobi, Kenya.
       </h2>
-      <div className="flex justify-between mt-5 md:w-[45%] 2xl:w-[40%]">
+      <div className="flex gap-x-10 mt-5">
         <button
           className={`bg-kd-lime text-kd-primary mix-blend-${heroBlendMode} px-12 py-2 rounded-3xl`}
         >
