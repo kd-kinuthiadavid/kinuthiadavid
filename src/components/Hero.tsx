@@ -39,16 +39,16 @@ const Hero = ({ updateHeroColors, parentTextColor, parentBgColor }: Props) => {
 
   return (
     <div
-      className={`w-[80%] md:w-[75%] xl:w-[50%] 2xl:w-[40%] pt-32 2xl:pt-40 flex flex-col gap-y-7 md:gap-y-10`}
+      className={`w-[80%] md:w-[75%] xl:w-[50%] 2xl:w-[40%] pt-32 2xl:pt-40 flex flex-col gap-y-7 md:gap-y-10 text-${textColor}`}
     >
       <h1
-        className={`font-bold text-5xl leading-[3.5rem] md:text-8xl md:leading-[6rem] text-${textColor}`}
+        className={`font-bold text-5xl leading-[3.5rem] md:text-8xl md:leading-[6rem]`}
         ref={ref}
       >
         Building user-centric digital experiences.
       </h1>
       <h2
-        className={`text-${textColor} leading-[1.7rem] lg:leading-[2rem] w-[90%] md:text-lg lg:text-xl md:w-[80%]`}
+        className={`leading-[1.7rem] lg:leading-[2rem] w-[90%] md:text-lg lg:text-xl md:w-[80%]`}
       >
         Hello, my name is David Kinuthia. Am a product & user-centric frontend
         engineer based out of Nairobi, Kenya.
@@ -60,7 +60,7 @@ const Hero = ({ updateHeroColors, parentTextColor, parentBgColor }: Props) => {
           Let's chat
         </button>
         <p
-          className={`text-${textColor} hidden lg:block text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95`}
+          className={`hidden lg:block text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95`}
         >
           learn more
         </p>
