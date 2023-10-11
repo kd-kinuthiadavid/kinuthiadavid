@@ -31,6 +31,12 @@ const Hero = ({ updateHeroColors, parentTextColor, parentBgColor }: Props) => {
     setBgColor(parentBgColor.replace("bg-", ""));
   }, [parentBgColor]);
 
+  useEffect(() => {
+    alert(
+      `${JSON.stringify(process.env.NODE_ENV)} text color changed: ${textColor}`
+    );
+  }, [textColor]);
+
   return (
     <div
       className={`w-[80%] md:w-[75%] xl:w-[50%] 2xl:w-[40%] pt-32 2xl:pt-40 flex flex-col gap-y-7 md:gap-y-10`}
