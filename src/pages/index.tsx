@@ -14,29 +14,30 @@ const quickSand = Quicksand({
 
 export default function Home() {
   const [background, setBackground] = useState("bg-kd-primary");
-  const [heroBlendMode, setHeroBlendMode] = useState("normal");
+  const [textColor, setTextColor] = useState("kd-primary");
 
   function handleBgColorChange(bgColor: string) {
     setBackground(bgColor);
   }
 
-  function handleBlendModeChange(mode: string) {
-    setHeroBlendMode(mode);
+  function updateHeroColors(bg: string, text: string) {
+    setBackground(bg);
+    setTextColor(text);
   }
 
   return (
     <main
-      className={`transition-colors ease-in-out delay-300 ${background} min-h-screen flex flex-col gap-y-10 md:gap-y-20 items-center pb-10 ${quickSand.className}`}
+      className={`transition-colors ease-in-out ${background} min-h-screen flex flex-col gap-y-10 md:gap-y-20 items-center pb-10 ${quickSand.className}`}
     >
       {/* hero section */}
       <Hero
-        updateParentBgColor={handleBgColorChange}
-        blendMode={heroBlendMode}
-        updateBlendMode={handleBlendModeChange}
+        updateHeroColors={updateHeroColors}
+        parentTextColor={textColor}
+        parentBgColor={background}
       />
 
       {/* projects */}
-      <Projects updateParentBgColor={handleBgColorChange} updateBlendMode={handleBlendModeChange} />
+      <Projects updateHeroColors={updateHeroColors} />
 
       {/* About */}
       <About updateParentBgColor={handleBgColorChange} />
