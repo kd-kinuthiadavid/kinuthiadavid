@@ -22,7 +22,7 @@ const Projects = ({ updateHeroColors }: ProjectsProps) => {
 
   return (
     <div
-      className={`text-${textColor} w-[90%] md:w-[75%] xl:w-[50%] pt-32 2xl:pt-40 flex flex-col gap-y-7`}
+      className={`text-${textColor} w-[90%] md:w-[75%] xl:w-[60%] pt-32 2xl:pt-40 flex flex-col gap-y-7`}
     >
       <div className="flex justify-between items-center bg-kd-lime text-kd-primary p-16 rounded-xl">
         <h2
@@ -34,11 +34,14 @@ const Projects = ({ updateHeroColors }: ProjectsProps) => {
         </h2>
       </div>
       <div className="flex flex-col gap-y-3.5 w-full">
-        <div className={`bg-${textColor} w-full h-[25rem] rounded-xl`}></div>
-        <div className="flex flex-col md:flex-row gap-3.5 w-full">
-          <div className={`bg-${textColor} w-full h-[20rem] rounded-xl`}></div>
-          <div className={`bg-${textColor} w-full h-[20rem] rounded-xl`}></div>
+        <div className={`bg-${textColor} w-full aspect-square h-auto rounded-xl`}></div>
+        <div className="columns md:columns-2 gap-3">
+          <div className={`bg-${textColor} w-full aspect-video h-auto rounded-xl my-3`}></div>
+          <div className={`bg-${textColor} w-full aspect-square h-auto rounded-xl my-3`}></div>
+          <div className={`bg-${textColor} w-full aspect-square h-auto rounded-xl my-3`}></div>
+          <div className={`bg-${textColor} w-full aspect-video h-auto rounded-xl my-3`}></div>
         </div>
+
       </div>
       <p className="text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95">
         see all projects
