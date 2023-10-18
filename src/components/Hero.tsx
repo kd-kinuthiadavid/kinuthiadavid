@@ -15,7 +15,6 @@ const Hero = ({ updateHeroColors, parentTextColor, parentBgColor }: Props) => {
     threshold: 1,
   });
 
-  console.log("###### bgColor #####", bgColor)
   useEffect(() => {
     if (inView && entry && entry.isIntersecting) {
       setTextColor("text-kd-lime");
@@ -32,9 +31,6 @@ const Hero = ({ updateHeroColors, parentTextColor, parentBgColor }: Props) => {
     setBgColor(parentBgColor.replace("bg-", ""));
   }, [parentBgColor]);
 
-  useEffect(() => {
-   console.log("@@@ Hero: textcolor changed @@@@", textColor)
-  }, [textColor]);
 
   return (
     <div
@@ -54,7 +50,7 @@ const Hero = ({ updateHeroColors, parentTextColor, parentBgColor }: Props) => {
       </h2>
       <div className="flex gap-x-10 mt-5">
         <button
-          className={`bg-${textColor.replace("text-", "")} text-${bgColor} px-12 py-2 rounded-3xl hover:scale-95`}
+          className={`bg-${textColor.replace("text-", "")} text-${bgColor === "text-kd-primary" ? "kd-primary" : bgColor === "bg-kd-primary" ? "kd-primary" : bgColor} px-12 py-2 rounded-3xl hover:scale-95`}
         >
           Let's chat
         </button>
