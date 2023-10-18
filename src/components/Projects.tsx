@@ -14,7 +14,7 @@ const Projects = ({ updateHeroColors }: ProjectsProps) => {
 
   useEffect(() => {
     if (inView && entry && entry.isIntersecting) {
-      updateHeroColors("bg-kd-lime", "kd-primary");
+      updateHeroColors("bg-kd-lime", "text-kd-primary");
       setTextColor("kd-primary");
       setBgColor("kd-lime");
     }

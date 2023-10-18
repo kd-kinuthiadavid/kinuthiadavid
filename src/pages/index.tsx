@@ -14,7 +14,7 @@ const quickSand = Quicksand({
 
 export default function Home() {
   const [background, setBackground] = useState("bg-kd-primary");
-  const [textColor, setTextColor] = useState("kd-primary");
+  const [textColor, setTextColor] = useState("text-kd-primary");
 
   function handleBgColorChange(bgColor: string) {
     setBackground(bgColor);
