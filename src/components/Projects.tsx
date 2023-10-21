@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import FeaturedProject from "./FeaturedProject";
 
 interface ProjectsProps {
   updateHeroColors: (bg: string, text: string) => void;
@@ -34,55 +33,103 @@ const Projects = ({ updateHeroColors }: ProjectsProps) => {
           projects
         </h2>
       </div>
-      <div className="flex flex-col gap-y-3.5 w-full">
-        <FeaturedProject
-          textColor={textColor}
-          bgColor={bgColor}
-          aspect="aspect-video"
-          imageURL="https://images.unsplash.com/photo-1674673353738-dc8039354dd0?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          title="Utterly"
-          description="Asynchronous voice communication for effective teams and individuals"
-        />
-        <div className="columns md:columns-2 gap-3">
-          <div className="my-3">
-            <FeaturedProject
-              textColor={textColor}
-              bgColor={bgColor}
-              aspect="aspect-video"
-              title="Author"
-              description="User identity and access management"
-              imageURL="https://images.unsplash.com/photo-1672080070762-764c74ee1227?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"
-            />
+      <div className="flex flex-col items-center justify-center gap-y-28 py-10 w-full h-full bg-kd-blue-light rounded-xl">
+        {/* utterly */}
+        <div className="flex flex-col lg:flex-row gap-y-12 justify-between w-[95%] lg:w-[80%]">
+          {/* description */}
+          <div className="flex flex-col lg:w-[50%] gap-y-10 justify-center">
+            <div className="flex flex-col gap-y-3">
+              <p className="font-black text-lg lg:text-xl underline underline-offset-8">
+                utterly
+              </p>
+              <p className="font-semibold text-3xl lg:text-5xl">
+                Asynchronous voice communication for effective teams and
+                individuals.
+              </p>
+            </div>
+            <div className="flex flex-col items-center w-full lg:flex-row gap-x-6 gap-y-3">
+              <a
+                className="flex justify-center items-center capitalize border border-kd-primary px-5 py-1 rounded-3xl text-sm font-semibold hover:scale-95 w-full lg:w-auto"
+                href="#"
+              >
+                Launch Project
+              </a>
+              <a
+                className="capitalize underline underline-offset-4 hover:scale-95"
+                href="#"
+              >
+                view on github
+              </a>
+            </div>
           </div>
-          <div className="my-3">
-            <FeaturedProject
-              textColor={textColor}
-              bgColor={bgColor}
-              aspect="aspect-square"
-              title="KUDI"
-              description="UI component libray"
-              imageURL="https://images.unsplash.com/photo-1696386863089-51aeac60112c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIxfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D"
-            />
+          {/* card */}
+          <div className="lg:w-[50%] flex flex-col lg:items-end lg:justify-center">
+            <div className="bg-kd-primary lg:w-[70%] h-[30rem] rounded-2xl"></div>
           </div>
-          <div className="my-3">
-            <FeaturedProject
-              textColor={textColor}
-              bgColor={bgColor}
-              aspect="aspect-square"
-              title="Readme.ai"
-              description="Reliable AI assisted documentaion for your software projects"
-              imageURL="https://images.unsplash.com/photo-1692651294881-05666ce21e92?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQyfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D"
-            />
+        </div>
+
+        {/* invoice.me */}
+        <div className="flex flex-col lg:flex-row-reverse gap-y-12 justify-between w-[95%] lg:w-[80%]">
+          {/* description */}
+          <div className="flex flex-col lg:w-[50%] gap-y-10 justify-center">
+            <div className="flex flex-col gap-y-3">
+              <p className="font-black text-lg lg:text-xl underline underline-offset-8">
+                invoice.me
+              </p>
+              <p className="font-semibold text-3xl lg:text-5xl">
+                Reliable and intuitive invoicing for freelancers.
+              </p>
+            </div>
+            <div className="flex flex-col items-center w-full lg:flex-row gap-x-6 gap-y-3">
+              <a
+                className="flex justify-center items-center capitalize border border-kd-primary px-5 py-1 rounded-3xl text-sm font-semibold hover:scale-95 w-full lg:w-auto"
+                href="#"
+              >
+                Launch Project
+              </a>
+              <a
+                className="capitalize underline underline-offset-4 hover:scale-95"
+                href="#"
+              >
+                view on github
+              </a>
+            </div>
           </div>
-          <div className="my-3">
-            <FeaturedProject
-              textColor={textColor}
-              bgColor={bgColor}
-              aspect="aspect-video"
-              title="Invoice.me"
-              description="Reliable and minimal invoicing solutions for freelancers"
-              imageURL="https://images.unsplash.com/photo-1693786691337-f6954ec22145?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUzfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D"
-            />
+          {/* card */}
+          <div className="lg:w-[50%] flex flex-col lg:items-start lg:justify-center">
+            <div className="bg-kd-primary lg:w-[70%] h-[30rem] rounded-2xl"></div>
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row gap-y-12 justify-between w-[95%] lg:w-[80%]">
+          {/* description */}
+          <div className="flex flex-col lg:w-[50%] gap-y-10 justify-center">
+            <div className="flex flex-col gap-y-3">
+              <p className="font-black text-lg lg:text-xl underline underline-offset-8">
+                readme.ai
+              </p>
+              <p className="font-semibold text-3xl lg:text-5xl">
+                Rapid AI-assisted documentation for your software projects.
+              </p>
+            </div>
+            <div className="flex flex-col items-center w-full lg:flex-row gap-x-6 gap-y-3">
+              <a
+                className="flex justify-center items-center capitalize border border-kd-primary px-5 py-1 rounded-3xl text-sm font-semibold hover:scale-95 w-full lg:w-auto"
+                href="#"
+              >
+                Launch Project
+              </a>
+              <a
+                className="capitalize underline underline-offset-4 hover:scale-95"
+                href="#"
+              >
+                view on github
+              </a>
+            </div>
+          </div>
+          {/* card */}
+          <div className="lg:w-[50%] flex flex-col lg:items-end lg:justify-center">
+            <div className="bg-kd-primary lg:w-[70%] h-[30rem] rounded-2xl"></div>
           </div>
         </div>
       </div>
