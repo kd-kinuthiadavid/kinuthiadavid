@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import FeaturedProject from "./FeaturedProject";
 
 interface ProjectsProps {
+  background: string;
   updateHeroColors: (bg: string, text: string) => void;
 }
 
-const Projects = ({ updateHeroColors }: ProjectsProps) => {
+const Projects = ({ updateHeroColors, background }: ProjectsProps) => {
   const [textColor, setTextColor] = useState("kd-primary");
   const [bgColor, setBgColor] = useState("kd-lime");
   const { ref, inView, entry } = useInView({
@@ -34,14 +36,21 @@ const Projects = ({ updateHeroColors }: ProjectsProps) => {
         </h2>
       </div>
       <div className="flex flex-col gap-y-3.5 w-full">
-        <div className={`bg-${textColor} w-full aspect-square h-auto rounded-xl`}></div>
+        <FeaturedProject textColor={textColor} background={background} />
         <div className="columns md:columns-2 gap-3">
-          <div className={`bg-${textColor} w-full aspect-video h-auto rounded-xl my-3`}></div>
-          <div className={`bg-${textColor} w-full aspect-square h-auto rounded-xl my-3`}></div>
-          <div className={`bg-${textColor} w-full aspect-square h-auto rounded-xl my-3`}></div>
-          <div className={`bg-${textColor} w-full aspect-video h-auto rounded-xl my-3`}></div>
+          <div
+            className={`bg-${textColor} w-full aspect-video h-auto rounded-xl my-3`}
+          ></div>
+          <div
+            className={`bg-${textColor} w-full aspect-square h-auto rounded-xl my-3`}
+          ></div>
+          <div
+            className={`bg-${textColor} w-full aspect-square h-auto rounded-xl my-3`}
+          ></div>
+          <div
+            className={`bg-${textColor} w-full aspect-video h-auto rounded-xl my-3`}
+          ></div>
         </div>
-
       </div>
       <p className="text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95">
         see all projects
