@@ -31,7 +31,6 @@ const Hero = ({ updateHeroColors, parentTextColor, parentBgColor }: Props) => {
     setBgColor(parentBgColor.replace("bg-", ""));
   }, [parentBgColor]);
 
-
   return (
     <div
       className={`w-[80%] md:w-[75%] xl:w-[50%] 2xl:w-[40%] pt-32 2xl:pt-40 flex flex-col gap-y-7 md:gap-y-10 ${textColor}`}
@@ -45,12 +44,20 @@ const Hero = ({ updateHeroColors, parentTextColor, parentBgColor }: Props) => {
       <h2
         className={`leading-[1.7rem] lg:leading-[2rem] w-[90%] md:text-lg lg:text-xl md:w-[80%] `}
       >
-        Hello, my name is David Kinuthia. Am a product & user-centric frontend
-        engineer based out of Nairobi, Kenya.
+        Hello, my name is{" "}
+        <span className={`underline underline-offset-4`}>David Kinuthia.</span>{" "}
+        Am a product & user-centric frontend engineer based out of Nairobi,
+        Kenya.
       </h2>
       <div className="flex gap-x-10 mt-5">
         <button
-          className={`bg-${textColor.replace("text-", "")} text-${bgColor === "text-kd-primary" ? "kd-primary" : bgColor === "bg-kd-primary" ? "kd-primary" : bgColor} px-12 py-2 rounded-3xl hover:scale-95`}
+          className={`bg-${textColor.replace("text-", "")} text-${
+            bgColor === "text-kd-primary"
+              ? "kd-primary"
+              : bgColor === "bg-kd-primary"
+              ? "kd-primary"
+              : bgColor
+          } px-12 py-2 rounded-3xl hover:scale-95`}
         >
           Let's chat
         </button>
