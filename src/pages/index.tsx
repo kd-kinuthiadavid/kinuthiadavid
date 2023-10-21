@@ -37,7 +37,7 @@ export default function Home() {
       />
 
       {/* projects */}
-      <Projects updateHeroColors={updateHeroColors} background={background} />
+      <Projects updateHeroColors={updateHeroColors} />
 
       {/* About */}
       <About updateParentBgColor={handleBgColorChange} />
