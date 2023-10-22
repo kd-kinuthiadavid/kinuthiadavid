@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
+
+import StaggeredAbout from "./StaggeredAbout";
 interface Props {
   background: string;
   updateParentBgColor: (bgColor: string) => void;
@@ -23,6 +26,11 @@ const About = ({ updateParentBgColor, background }: Props) => {
   function activateTSWMTab() {
     return setActiveTab("tswm");
   }
+
+  const currentDate = new Date();
+  const year2018 = new Date(2018, 0, 1); // January 1, 2018
+
+  const yearsDifference = currentDate.getFullYear() - year2018.getFullYear();
 
   useEffect(() => {
     if (inView && entry && entry.isIntersecting) {
@@ -71,45 +79,40 @@ const About = ({ updateParentBgColor, background }: Props) => {
             <div className="flex flex-col gap-y-6">
               <p className="font-light text-lg lg:text-xl">
                 With{" "}
-                <span className="font-medium underline underline-offset-4">
-                  over 5 years of experience
+                <span className="font-medium">
+                  {yearsDifference}+ years in frontend engineering,
                 </span>{" "}
-                in frontend engineering, I'm deeply passionate about the
-                intersection of technology, design, and creating seamless user
-                experiences. I thrive on building and tinkering with products
-                that captivate and serve users effectively. My work is a
-                reflection of my obsession with understanding and translating
-                user requirements into elegant, functional solutions.
+                I'm deeply passionate about the fusion of tech and design for
+                seamless user experiences. I thrive on crafting captivating,
+                user-centric products, obsessively translating requirements into
+                elegant, functional solutions.
               </p>
               <p className="font-light text-lg lg:text-xl">
-                In terms of technical expertise, I'm well-versed in a range of
-                frontend technologies, with expert proficiency in{" "}
-                <span className="font-medium underline underline-offset-4">
-                  React
+                In terms of technical expertise, I excel in a range of frontend
+                technologies, with mastery in{" "}
+                <span className="font-medium">React, Vue, Typescript</span>, and
+                related frameworks. Furthermore, I offer{" "}
+                <span className="font-medium">
+                  full-stack and backend proficiency
                 </span>
-                ,{" "}
-                <span className="font-medium underline underline-offset-4">
-                  Vue
-                </span>
-                ,{" "}
-                <span className="font-medium underline underline-offset-4">
-                  TypeScript
-                </span>
-                , and related frameworks. Additionally, I bring the added value
-                of{" "}
-                <span className="font-medium underline underline-offset-4">
-                  full-stack and backend experience
-                </span>
-                , having worked extensively with Node.js and Python.
+                , gained through extensive work with Node.js and Python
+              </p>
+              <p
+                className="hidden lg:block text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95"
+                onClick={activateTSWMTab}
+              >
+                learn all about me
               </p>
             </div>
             <div className="flex flex-col gap-y-6">
-              <p className="font-bold text-lg lg:text-xl">
-                My journey as a frontend engineer is driven by a commitment to
-                excellence in design, a flair for innovation, and a genuine
-                passion for creating digital experiences that resonate with
-                users.
-              </p>
+              <div className="flex justify-center items-center">
+                <p className="w-[95%] md:w-[80%] font-bold text-lg md:text-xl lg:text-2xl text-center lg:text-left  opacity-40">
+                  My journey as a frontend engineer is driven by a commitment to
+                  excellence in design, a flair for innovation, and a genuine
+                  passion for creating digital experiences that resonate with
+                  users.
+                </p>
+              </div>
               <p className="font-light  text-lg lg:text-xl">
                 Let's connect and explore how I can contribute to your team and
                 projects.
@@ -122,18 +125,22 @@ const About = ({ updateParentBgColor, background }: Props) => {
                   email
                 </a>
                 <a
-                  href="mailto:kd.kinuthiadavid@gmail.com"
+                  href="https://www.linkedin.com/in/david-kinuthia/"
                   className="font-medium border border-kd-primary px-5 py-1 rounded-2xl"
                 >
                   linkedIn
                 </a>
+                <p
+                  className="lg:hidden text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95"
+                  onClick={activateTSWMTab}
+                >
+                  learn all about me
+                </p>
               </div>
             </div>
           </>
         ) : (
-          <>
-          fhjdhfjd
-          </>
+          <StaggeredAbout />
         )}
       </div>
     </div>
