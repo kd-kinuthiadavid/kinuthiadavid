@@ -40,7 +40,10 @@ export default function Home() {
       <Projects updateHeroColors={updateHeroColors} />
 
       {/* About */}
-      <About updateParentBgColor={handleBgColorChange} />
+      <About
+        updateParentBgColor={handleBgColorChange}
+        background={background}
+      />
 
       {/* Experience */}
       <Experience updateParentBgColor={handleBgColorChange} />
