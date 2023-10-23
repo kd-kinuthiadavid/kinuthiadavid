@@ -34,36 +34,21 @@ const Experience = ({ updateParentBgColor }: Props) => {
       title: "Frontend Engineer",
       location: "Nairobi, Kenya.",
       URL: "https://www.twende.app/",
-      description: `A next generation HRIS that forms the core of
-      your people stack and programmatically drives
-      your people services, from time off to access
-      management, payroll to benefits. Minimise time
-      spent on admin using automation and
-      employee self-service.`,
+      description: `Worked on Twift: one-stop SaaS for all things logistics, automating day-to-day operations allowing businesses to scale; and Twende Carpool: Kenya's first carpooling service - connecting drivers and travellers headed in the same direction.`,
     },
     {
       name: "Churpy",
       title: "Senior Frontend Engineer",
       location: "Nairobi, Kenya.",
       URL: "https://churpy.co/",
-      description: `A next generation HRIS that forms the core of
-      your people stack and programmatically drives
-      your people services, from time off to access
-      management, payroll to benefits. Minimise time
-      spent on admin using automation and
-      employee self-service.`,
+      description: `Worked on an array of fin-tech solutions revolving around reconcilliation, invoicing, lending, digital ledgers, virtual accounts and digital wallets and payments: disbursements and collections.`,
     },
     {
       name: "Apollo",
       title: "Fullstack Engineer",
       location: "North Carolina, USA.",
       URL: "https://www.apolloapi.io/",
-      description: `A next generation HRIS that forms the core of
-      your people stack and programmatically drives
-      your people services, from time off to access
-      management, payroll to benefits. Minimise time
-      spent on admin using automation and
-      employee self-service.`,
+      description: `Worked on both open source tools for Machine Learning model management and Large Language Models output comparison and quality; and developed text moderation APIs for prompt sentiment analysis and scoring`,
     },
   ]);
   const [selectedExperience, setSelectedExperience] = useState<Experience>(
