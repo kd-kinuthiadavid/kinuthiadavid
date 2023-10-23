@@ -83,9 +83,9 @@ const About = ({ updateParentBgColor, background }: Props) => {
                   {yearsDifference}+ years in frontend engineering,
                 </span>{" "}
                 I'm deeply passionate about the fusion of tech and design for
-                seamless user experiences. I thrive on crafting captivating,
-                user-centric products, obsessively translating requirements into
-                elegant, functional solutions.
+                seamless user experiences. I thrive on crafting captivating
+                user-centric products; obsessively translating requirements into
+                elegant and functional solutions.
               </p>
               <p className="font-light text-lg lg:text-xl">
                 In terms of technical expertise, I excel in a range of frontend
@@ -95,7 +95,7 @@ const About = ({ updateParentBgColor, background }: Props) => {
                 <span className="font-medium">
                   full-stack and backend proficiency
                 </span>
-                , gained through extensive work with Node.js and Python
+                , gained through extensive work with Node.js and Python.
               </p>
               <p
                 className="hidden lg:block text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95"
@@ -117,21 +117,23 @@ const About = ({ updateParentBgColor, background }: Props) => {
                 Let's connect and explore how I can contribute to your team and
                 projects.
               </p>
-              <div className="flex gap-x-6 capitalize">
+              <div className="flex justify-center items-center flex-wrap gap-y-3 w-full md:w-auto gap-x-6 capitalize">
                 <a
                   href="mailto:kd.kinuthiadavid@gmail.com"
-                  className="font-medium border border-kd-primary px-5 py-1 rounded-2xl"
+                  className="flex justify-center items-center font-medium border border-kd-primary px-2 md:px-5 md:py-1 rounded-2xl w-full md:w-auto"
+                  target="_blank"
                 >
                   email
                 </a>
                 <a
                   href="https://www.linkedin.com/in/david-kinuthia/"
-                  className="font-medium border border-kd-primary px-5 py-1 rounded-2xl"
+                  className="flex justify-center items-center font-medium border border-kd-primary px-2 md:px-5 md:py-1 rounded-2xl w-full md:w-auto"
+                  target="_blank"
                 >
                   linkedIn
                 </a>
                 <p
-                  className="lg:hidden text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95"
+                  className="lg:hidden text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95 w-full md:w-auto text-center"
                   onClick={activateTSWMTab}
                 >
                   learn all about me

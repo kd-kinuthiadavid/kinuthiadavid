@@ -19,40 +19,41 @@ const StaggeredAbout = () => {
           {/* communication & collaboration */}
           <div className="flex flex-col gap-y-6 bg-kd-blue-light p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
-              <p className="font-semibold break-all text-5xl capitalize underline underline-offset-2">
-                communication & collaboration
+              <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
+                communication & collaboration.
               </p>
             </div>
             <p className="text-lg font-medium">
               Exceptional communicator with a strong command of English,
-              facilitating clear, effective communication with cross-functional
-              teams.
+              facilitating clear and effective communication with
+              cross-functional teams.
             </p>
           </div>
 
           {/* frontend expertise */}
           <div className="flex flex-col gap-y-6 bg-kd-blue p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
-              <p className="font-semibold break-all text-5xl capitalize underline underline-offset-2">
-                frontend expertise
+              <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
+                frontend expertise.
               </p>
             </div>
             <p className="text-lg font-medium">
               Expert in React, Typescript, Vue, and web technologies (HTML, CSS,
-              DOM, Web APIs), adept at crafting SaaS platforms.
+              DOM, Web APIs); adept at crafting SaaS platforms.
             </p>
           </div>
 
           {/* industry standards */}
           <div className="flex flex-col gap-y-6 bg-kd-blue p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
-              <p className="font-semibold break-all text-5xl capitalize underline underline-offset-2">
-                industry standards
+              <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
+                industry standards.
               </p>
             </div>
             <p className="text-lg font-medium">
-              Agile methodology expertise, Git, DevOps, and a focus on improving
-              engineering standards, performance, security, and scalability.
+              Agile methodology expertise, Git, DevOps and a focus on improving
+              engineering standards such as performance, security and
+              scalability.
             </p>
           </div>
         </div>
@@ -62,8 +63,8 @@ const StaggeredAbout = () => {
           {/* design & UXE */}
           <div className="flex flex-col gap-y-6 bg-kd-lime p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
-              <p className="font-semibold break-all text-5xl capitalize underline underline-offset-2">
-                design & UXE instincts
+              <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
+                design & UXE instincts.
               </p>
             </div>
             <p className="text-lg font-medium">
@@ -75,8 +76,8 @@ const StaggeredAbout = () => {
           {/* leadership */}
           <div className="flex flex-col gap-y-6 bg-kd-blue-light p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
-              <p className="font-semibold break-all text-5xl capitalize underline underline-offset-2">
-                leadership
+              <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
+                leadership.
               </p>
             </div>
             <p className="text-lg font-medium">
@@ -92,26 +93,27 @@ const StaggeredAbout = () => {
           {/* fullstack experience */}
           <div className="flex flex-col gap-y-6 bg-kd-blue p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
-              <p className="font-semibold break-all text-5xl capitalize underline underline-offset-2">
-                fullstack experience
+              <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
+                fullstack experience.
               </p>
             </div>
             <p className="text-lg font-medium">
               Proficient in managing and scaling databases (relational and
-              NoSQL), working with REST APIs, GraphQL, Node.js, and Python.
+              NoSQL), working with REST APIs, GraphQL, Node.js (NestJs), and
+              Python (Flask & Django).
             </p>
           </div>
 
           {/* product driven */}
           <div className="flex flex-col gap-y-6 bg-kd-blue-light p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
-              <p className="font-semibold break-all text-5xl capitalize underline underline-offset-2">
-                product driven
+              <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
+                product driven.
               </p>
             </div>
             <p className="text-lg font-medium">
-              User-centric approach to project ownership, rapid iteration, and
-              refinement based on alpha user feedback.
+              User-centric approach to project ownership; rapid iteration and
+              refinement based on user feedback.
             </p>
           </div>
         </div>
