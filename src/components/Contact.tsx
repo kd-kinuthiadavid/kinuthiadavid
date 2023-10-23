@@ -36,9 +36,11 @@ const Contact = ({ updateParentBgColor }: Props) => {
       <div className="flex flex-col gap-y-3.5">
         {/* say hello  */}
         <div
-          className={`bg-${bgColor} w-full min-h-[25rem] rounded-xl p-3 text-3xl flex flex-col justify-center items-center`}
+          className={`bg-${bgColor} w-full min-h-[25rem] rounded-xl p-5 break-words text-3xl flex flex-col justify-center items-center`}
         >
-          <h1 className={`text-kd-blue font-bold text-5xl xl:text-9xl`}>
+          <h1
+            className={`text-kd-blue font-bold text-6xl md:text-8xl xl:text-9xl 2xl:text-10xl`}
+          >
             Say hello.
           </h1>
         </div>
@@ -46,7 +48,7 @@ const Contact = ({ updateParentBgColor }: Props) => {
         <div className="flex flex-col md:flex-row gap-3.5 w-full">
           {/* cold contacts */}
           <div
-            className={`bg-${bgColor} h-[15rem] w-full rounded-xl p-3 flex flex-col gap-y-2 justify-center items-center text-kd-blue`}
+            className={`bg-${bgColor} h-[15rem] w-full rounded-xl p-5 lg:p-10 flex flex-col gap-y-2 justify-center items-center text-kd-blue`}
           >
             <div className="flex flex-col gap-y-2">
               <a
@@ -76,7 +78,7 @@ const Contact = ({ updateParentBgColor }: Props) => {
             </div>
           </div>
           <div
-            className={`bg-${bgColor} text-kd-blue w-full h-[15rem] rounded-xl p-3 flex flex-col justify-center items-center`}
+            className={`bg-${bgColor} text-kd-blue w-full h-[15rem] rounded-xl p-5 lg:p-10 flex flex-col justify-center items-center`}
           >
             <div className="flex flex-col gap-y-2">
               <a

@@ -23,6 +23,7 @@ const config: Config = {
         "kd-primary-light": "#D7EAE0",
         "kd-white": "#ffffff",
         "kd-blue": "#DFECF6",
+        "kd-blue-bg": "#CFE3F2",
         "kd-blue-light": "#F4FCEE",
       },
     },

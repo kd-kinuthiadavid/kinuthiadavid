@@ -117,7 +117,7 @@ const About = ({ updateParentBgColor, background }: Props) => {
                 Let's connect and explore how I can contribute to your team and
                 projects.
               </p>
-              <div className="flex justify-center items-center flex-wrap gap-y-3 w-full md:w-auto gap-x-6 capitalize">
+              <div className="flex justify-center items-center md:justify-start flex-wrap gap-y-3 w-full md:w-auto gap-x-6 capitalize">
                 <a
                   href="mailto:kd.kinuthiadavid@gmail.com"
                   className="flex justify-center items-center font-medium border border-kd-primary px-2 md:px-5 md:py-1 rounded-2xl w-full md:w-auto"
