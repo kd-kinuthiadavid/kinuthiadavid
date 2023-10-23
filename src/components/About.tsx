@@ -71,7 +71,7 @@ const About = ({ updateParentBgColor, background }: Props) => {
             }`}
             onClick={activateTSWMTab}
           >
-            tswm.
+            summary.
           </h3>
         </div>
         {activeTab === "tldr" ? (
