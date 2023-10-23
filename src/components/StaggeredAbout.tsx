@@ -17,7 +17,7 @@ const StaggeredAbout = () => {
         {/* communication-collaboration, frontend expertise & industry standards */}
         <div className="flex flex-col gap-y-12">
           {/* communication & collaboration */}
-          <div className="flex flex-col gap-y-6 bg-kd-blue-light p-12 rounded-xl">
+          <div className="flex justify-center items-center text-center flex-col gap-y-6 bg-kd-blue-light p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
               <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
                 communication & collaboration.
@@ -31,7 +31,7 @@ const StaggeredAbout = () => {
           </div>
 
           {/* frontend expertise */}
-          <div className="flex flex-col gap-y-6 bg-kd-blue p-12 rounded-xl">
+          <div className="flex justify-center items-center text-center flex-col gap-y-6 bg-kd-blue p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
               <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
                 frontend expertise.
@@ -44,7 +44,7 @@ const StaggeredAbout = () => {
           </div>
 
           {/* industry standards */}
-          <div className="flex flex-col gap-y-6 bg-kd-blue p-12 rounded-xl">
+          <div className="flex justify-center items-center text-center flex-col gap-y-6 bg-kd-blue p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
               <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
                 industry standards.
@@ -61,7 +61,7 @@ const StaggeredAbout = () => {
         {/*  design & UXE instincts, leadership */}
         <div className="flex flex-col gap-y-12 mt-40">
           {/* design & UXE */}
-          <div className="flex flex-col gap-y-6 bg-kd-lime p-12 rounded-xl">
+          <div className="flex justify-center items-center text-center flex-col gap-y-6 bg-kd-lime p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
               <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
                 design & UXE instincts.
@@ -74,7 +74,7 @@ const StaggeredAbout = () => {
           </div>
 
           {/* leadership */}
-          <div className="flex flex-col gap-y-6 bg-kd-blue-light p-12 rounded-xl">
+          <div className="flex justify-center items-center text-center flex-col gap-y-6 bg-kd-blue-light p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
               <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
                 leadership.
@@ -86,12 +86,25 @@ const StaggeredAbout = () => {
               of features and product lines.
             </p>
           </div>
+
+          {/* product driven */}
+          <div className="hidden md:flex justify-center items-center text-center flex-col 2xl:hidden gap-y-6 bg-kd-blue-light p-12 rounded-xl">
+            <div className="flex justify-start items-end gap-x-6">
+              <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
+                product driven.
+              </p>
+            </div>
+            <p className="text-lg font-medium">
+              User-centric approach to project ownership; rapid iteration and
+              refinement based on user feedback.
+            </p>
+          </div>
         </div>
 
         {/* fullstack experience & product-driven */}
         <div className="flex flex-col gap-y-12 mt-30">
           {/* fullstack experience */}
-          <div className="flex flex-col gap-y-6 bg-kd-blue p-12 rounded-xl">
+          <div className="flex justify-center items-center text-center flex-col gap-y-6 bg-kd-blue p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
               <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
                 fullstack experience.
@@ -105,7 +118,7 @@ const StaggeredAbout = () => {
           </div>
 
           {/* product driven */}
-          <div className="flex flex-col gap-y-6 bg-kd-blue-light p-12 rounded-xl">
+          <div className="flex md:hidden 2xl:flex justify-center items-center text-center flex-col gap-y-6 bg-kd-blue-light p-12 rounded-xl">
             <div className="flex justify-start items-end gap-x-6">
               <p className="font-semibold break-words text-3xl lg:text-4xl capitalize underline underline-offset-2">
                 product driven.

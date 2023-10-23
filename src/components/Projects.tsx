@@ -33,9 +33,9 @@ const Projects = ({ updateHeroColors }: ProjectsProps) => {
           projects
         </h2>
       </div>
-      <div className="flex flex-col items-center justify-center gap-y-28 py-10 w-full h-full bg-kd-blue-light rounded-xl">
+      <div className="flex flex-col items-center justify-center gap-y-28 px-2 py-5 md:py-10 w-full h-full bg-kd-blue-light rounded-xl">
         {/* utterly */}
-        <div className="flex flex-col lg:flex-row gap-y-12 justify-between w-[95%] lg:w-[80%]">
+        <div className="flex flex-col lg:flex-row gap-y-12 justify-between w-[90%] lg:w-[80%]">
           {/* description */}
           <div className="flex flex-col lg:w-[50%] gap-y-10 justify-center">
             <div className="flex flex-col gap-y-3">
