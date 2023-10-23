@@ -22,7 +22,7 @@ const Projects = ({ updateHeroColors }: ProjectsProps) => {
 
   return (
     <div
-      className={`text-${textColor} w-[90%] md:w-[75%] xl:w-[60%] pt-32 2xl:pt-40 flex flex-col gap-y-7`}
+      className={`text-${textColor} w-[90%] md:w-[75%] 2xl:w-[60%] pt-32 2xl:pt-40 flex flex-col gap-y-7`}
     >
       <div className="flex justify-between items-center bg-kd-lime text-kd-primary p-16 rounded-xl">
         <h2

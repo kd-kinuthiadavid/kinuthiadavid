@@ -90,7 +90,7 @@ const Experience = ({ updateParentBgColor }: Props) => {
           className="font-semibold text-4xl md:text-5xl md:leading-[3.5rem] mb-3"
           ref={ref}
         >
-          Places I've Worked
+          Experience
         </h2>
       </div>
       <div className="flex flex-col gap-y-3.5">
@@ -101,8 +101,10 @@ const Experience = ({ updateParentBgColor }: Props) => {
             {tabs.map((tab, idx) => (
               <p
                 key={idx}
-                className={`font-medium text-lg capitalize opacity-40 cursor-pointer ${
-                  tab.isActive && "opacity-100 underline underline-offset-4"
+                className={`font-medium text-lg capitalize cursor-pointer ${
+                  tab.isActive
+                    ? "opacity-100 underline underline-offset-4"
+                    : "opacity-40"
                 }`}
                 onClick={() => selectTab(tab.name)}
               >

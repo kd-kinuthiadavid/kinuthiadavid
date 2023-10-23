@@ -52,7 +52,7 @@ const About = ({ updateParentBgColor, background }: Props) => {
           className="font-semibold text-4xl md:text-5xl md:leading-[3.5rem] mb-3"
           ref={ref}
         >
-          About Me
+          About
         </h2>
       </div>
       <div className="flex flex-col lg:flex-row gap-y-6 justify-between gap-x-14 w-full">
@@ -77,7 +77,7 @@ const About = ({ updateParentBgColor, background }: Props) => {
         {activeTab === "tldr" ? (
           <>
             <div className="flex flex-col gap-y-6">
-              <p className="font-light text-lg lg:text-xl">
+              <p className="font-light text-base lg:text-lg">
                 With{" "}
                 <span className="font-medium">
                   {yearsDifference}+ years in frontend engineering,
@@ -87,7 +87,7 @@ const About = ({ updateParentBgColor, background }: Props) => {
                 user-centric products; obsessively translating requirements into
                 elegant and functional solutions.
               </p>
-              <p className="font-light text-lg lg:text-xl">
+              <p className="font-light text-base lg:text-lg">
                 In terms of technical expertise, I excel in a range of frontend
                 technologies, with mastery in{" "}
                 <span className="font-medium">React, Vue, Typescript</span>, and
@@ -98,7 +98,7 @@ const About = ({ updateParentBgColor, background }: Props) => {
                 , gained through extensive work with Node.js and Python.
               </p>
               <p
-                className="hidden lg:block text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95"
+                className="hidden lg:block text-base lg:text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95"
                 onClick={activateTSWMTab}
               >
                 learn all about me
@@ -106,14 +106,14 @@ const About = ({ updateParentBgColor, background }: Props) => {
             </div>
             <div className="flex flex-col gap-y-6">
               <div className="flex justify-center items-center">
-                <p className="w-[95%] md:w-[80%] font-bold text-lg md:text-xl lg:text-2xl text-center lg:text-left  opacity-40">
+                <p className="w-[95%] md:w-[80%] font-bold text-base md:text-xl lg:text-xl text-center lg:text-left  opacity-40">
                   My journey as a frontend engineer is driven by a commitment to
                   excellence in design, a flair for innovation, and a genuine
                   passion for creating digital experiences that resonate with
                   users.
                 </p>
               </div>
-              <p className="font-light  text-lg lg:text-xl">
+              <p className="font-light text-base lg:text-lg">
                 Let's connect and explore how I can contribute to your team and
                 projects.
               </p>
@@ -133,7 +133,7 @@ const About = ({ updateParentBgColor, background }: Props) => {
                   linkedIn
                 </a>
                 <p
-                  className="lg:hidden text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95 w-full md:w-auto text-center"
+                  className="lg:hidden text-base lg:text-lg capitalize underline underline-offset-8 cursor-pointer hover:scale-95 w-full md:w-auto text-center"
                   onClick={activateTSWMTab}
                 >
                   learn all about me
